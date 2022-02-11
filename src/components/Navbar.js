@@ -13,7 +13,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
-              src="/images/bae_logo.png"
+              src="/ba_hero/images/bae_logo.png"
               height="30px"
               width="220px"
               alt="logo"
