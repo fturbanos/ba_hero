@@ -9,7 +9,7 @@ function CareerItem(props) {
         <Link className="career-item__link" to={props.path}>
           <h5 className="career-item__title">{props.title}</h5>
         </Link>
-        <p class="career-item__description">{props.description}</p>
+        <p className="career-item__description">{props.description}</p>
         <Button
           className='btns'
           buttonStyle='btn--outline'
