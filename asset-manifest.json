@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ba_hero/static/css/main.c405b749.css",
+    "main.js": "/ba_hero/static/js/main.890fe697.js",
+    "index.html": "/ba_hero/index.html",
+    "static/media/App.less": "/ba_hero/static/media/App.c9f9d7455881efdab79d.less",
+    "main.c405b749.css.map": "/ba_hero/static/css/main.c405b749.css.map",
+    "main.890fe697.js.map": "/ba_hero/static/js/main.890fe697.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c405b749.css",
+    "static/js/main.890fe697.js"
+  ]
+}
