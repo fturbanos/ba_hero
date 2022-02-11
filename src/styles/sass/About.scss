@@ -1,0 +1,40 @@
+.about-us {
+  height: 100vh;
+  background: #951b1b;
+  color: #fff;
+
+  &__wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+
+    > div {
+      width: 50%;
+    }
+  }
+
+  > h1 {
+    font-size: 70px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto 80px;
+    padding-top: 30px;
+  }
+}
+
+.about-us__description {
+  > p,
+  > ul,
+  li {
+    line-height: 32px;
+  }
+
+  > ul li {
+    margin-left: 70px;
+  }
+
+  > p span {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
