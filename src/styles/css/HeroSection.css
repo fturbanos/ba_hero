@@ -1,58 +1,58 @@
 video {
-  object-fit: cover;
+  position: fixed;
   width: 100%;
   height: 100%;
-  position: fixed;
+  object-fit: cover;
   z-index: -1;
 }
 
 .hero-container {
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100%;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
 }
 .hero-container h1 {
   width: 85%;
-  color: #fff;
-  font-size: 4.4rem;
   margin-top: -100px;
+  color: #fff;
   font-family: "CircularStd-Black", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 .hero-container > p {
-  margin-top: 8px;
   color: #fff;
-  font-size: 32px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.hero-btns {
-  margin-top: 32px;
-}
-.hero-btns .btn {
-  margin: 6px;
-}
+@media screen and (min-width: 768px) {
+  .hero-container h1 {
+    font-size: 4.4rem;
+  }
+  .hero-container > p {
+    font-size: 32px;
+    margin-top: 8px;
+  }
 
-.fa-play-circle {
-  margin-left: 4px;
-}
+  .hero-btns {
+    margin-top: 32px;
+  }
+  .hero-btns .btn {
+    margin: 6px;
+  }
 
-@media screen and (max-width: 960px) {
-  .hero-container > h1 {
-    font-size: 70px;
-    margin-top: -150px;
+  .fa-play-circle {
+    margin-left: 4px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero-container h1 {
     font-size: 50px;
-    margin-top: -100px;
+    margin-bottom: 20px;
   }
   .hero-container > p {
     font-size: 30px;
@@ -65,5 +65,10 @@ video {
 
   .btn {
     width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .hero-container h1 {
+    font-size: 35px;
   }
 }

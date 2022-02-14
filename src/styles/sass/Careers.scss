@@ -1,12 +1,12 @@
+//
+//  Common
+//  _____________________________________________
+
 .careers {
-  padding: 80px 100px 30px;
   background: #951b1b;
   color: var(--primary);
 
   h1 {
-    font-size: 50px;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
     border-bottom: 2px solid #fff;
   }
 }
@@ -15,14 +15,7 @@
   text-decoration: none;
 
   h5 {
-    font-size: 30px;
-    margin-bottom: 20px;
     color: #fff;
-  }
-
-  + p {
-    margin-bottom: 20px;
-    line-height: 32px;
   }
 }
 
@@ -30,20 +23,111 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin-bottom: 60px;
 }
 
 .career-item {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 40px;
-
-  .btn {
-    font-size: 16px;
-  }
 
   a.btn-mobile {
     margin-top: auto;
+  }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+@media only screen and (min-width: 768px) {
+  .careers {
+    padding: 80px 80px 30px;
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .career-item__link {
+    h5 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    + p {
+      margin-bottom: 20px;
+      line-height: 32px;
+    }
+  }
+
+  .careers__container > ul {
+    margin-bottom: 60px;
+  }
+
+  .career-item {
+    padding: 20px;
+
+    .btn {
+      font-size: 16px;
+    }
+  }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+@media only screen and (max-width: 767px) {
+  .careers {
+    padding: 20px;
+    
+    h1 {
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .careers__container {
+      padding-bottom: 30px;
+    }
+
+    .career-item {
+      padding: 20px;
+    }
+
+    .career-item__title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .career-item__description {
+      font-size: 12px;
+      margin-bottom: 10px;
+      line-height: 24px;
+    }
+
+    .btn-mobile {
+      button {
+        font-size: 12px;
+        padding: 9px;
+      }
+    }
+  }
+}
+
+//
+//  Small Mobile
+//  _____________________________________________
+
+@media only screen and (max-width: 479px) {
+  .careers__container {
+    > ul {
+      flex-direction: column;
+
+      li {
+        width: 100%;
+      }
+    }
   }
 }

@@ -157,3 +157,12 @@
     transition: 250ms;
   }
 }
+@media screen and (max-width: 479px) {
+  .navbar .navbar-logo {
+    margin-left: -35px;
+  }
+  .navbar .fas {
+    margin-top: 9px;
+    line-height: 20px;
+  }
+}

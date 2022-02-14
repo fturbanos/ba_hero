@@ -1,5 +1,8 @@
+//
+//  Common
+//  _____________________________________________
+
 .about-us {
-  height: 100vh;
   background: #951b1b;
   color: #fff;
 
@@ -14,27 +17,57 @@
   }
 
   > h1 {
-    font-size: 70px;
     text-align: left;
+    margin: 0 auto;
     width: 80%;
-    margin: 0 auto 80px;
-    padding-top: 30px;
   }
 }
 
 .about-us__description {
-  > p,
-  > ul,
-  li {
-    line-height: 32px;
-  }
-
-  > ul li {
-    margin-left: 70px;
-  }
-
   > p span {
     display: block;
-    margin-bottom: 30px;
+  }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+@media only screen and (min-width: 768px) {
+  .about-us {
+    > h1 {
+      font-size: 50px;
+      margin: 0 auto 80px;
+      padding-top: 30px;
+    }
+  }
+
+  .about-us__description {
+    > p,
+    > ul,
+    li {
+      line-height: 32px;
+    }
+
+    > ul li {
+      margin-left: 70px;
+    }
+
+    > p span {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+@media only screen and (max-width: 767px) {
+  .about-us {
+    > h1 {
+      font-size: 30px;
+      padding: 40px 0;
+    }
   }
 }

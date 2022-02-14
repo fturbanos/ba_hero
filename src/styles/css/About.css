@@ -1,5 +1,4 @@
 .about-us {
-  height: 100vh;
   background: #951b1b;
   color: #fff;
 }
@@ -12,22 +11,37 @@
   width: 50%;
 }
 .about-us > h1 {
-  font-size: 70px;
   text-align: left;
+  margin: 0 auto;
   width: 80%;
-  margin: 0 auto 80px;
-  padding-top: 30px;
 }
 
-.about-us__description > p,
-.about-us__description > ul,
-.about-us__description li {
-  line-height: 32px;
-}
-.about-us__description > ul li {
-  margin-left: 70px;
-}
 .about-us__description > p span {
   display: block;
-  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-us > h1 {
+    font-size: 50px;
+    margin: 0 auto 80px;
+    padding-top: 30px;
+  }
+
+  .about-us__description > p,
+.about-us__description > ul,
+.about-us__description li {
+    line-height: 32px;
+  }
+  .about-us__description > ul li {
+    margin-left: 70px;
+  }
+  .about-us__description > p span {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-us > h1 {
+    font-size: 30px;
+    padding: 40px 0;
+  }
 }
